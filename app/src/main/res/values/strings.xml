@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Pixels</string>
+    <string name="Welcome">Welcome to Animal App</string>
+    <string name="Next">Next</string>
+    <string name="Prof">Profile</string>
+    <string name="Sett">Settings</string>
+    <string name="ProfSett">Profile Settings</string>
+    <string name="Save">Save</string>
+    <string name="Name">Name</string>
+    <string name="Class">Class</string>
+    <string name="ChangeA">Change Avatar</string>
+    <string name="Reg">Registration</string>
+    <string name="LI">User ID</string>
+    <string name="PW">Password</string>
+    <string name="Login">Log in</string>
+    <string name="Exit">Exit</string>
+    <string name="News">News</string>
+    <string name="Educ">Education</string>
+    <string name="Coll">My collection</string>
+    <string-array name="links">
+        <item>https://google.com</item>
+        <item>https://yandex.ru</item>
+        <item>https://www.microsoft.com</item>
+        <item>https://wikipedia.org</item>
+        <item>https://www.citilink.ru/discount/?ref=mainmenu</item>
+        <item>https://ozon.ru</item>
+        <item>https://www.lego.com</item>
+        <item>https://ok.ru</item>
+        <item>https://mail.ru</item>
+        <item>https://yandex.ru/images</item>
+    </string-array>
+</resources>
