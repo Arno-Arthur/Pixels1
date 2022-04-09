@@ -110,6 +110,7 @@
             android:background="@color/purple_500"
             android:clickable="true"
             android:onClick="News"
+            android:contentDescription="@string/News"
             android:src="@android:drawable/ic_dialog_info"></ImageButton>
 
         <ImageButton
@@ -121,6 +122,7 @@
             android:background="@color/purple_500"
             android:clickable="true"
             android:onClick="Education"
+            android:contentDescription="@string/Educ"
             android:src="@android:drawable/ic_dialog_map"></ImageButton>
 
         <ImageButton
@@ -132,6 +134,7 @@
             android:background="@color/purple_500"
             android:clickable="true"
             android:onClick="Collection"
+            android:contentDescription="@string/Coll"
             android:src="@android:drawable/ic_dialog_dialer"></ImageButton>
 
         <ImageButton
@@ -142,6 +145,7 @@
             android:background="@color/purple_200"
             android:clickable="true"
             android:onClick="Profile"
+            android:contentDescription="@string/Prof"
             android:src="@android:drawable/ic_dialog_alert"></ImageButton>
     </LinearLayout>
 
