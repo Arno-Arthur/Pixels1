@@ -5,19 +5,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/news3"
-        android:layout_width="370dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="500dp"
-        android:background="@color/white"
-        android:onClick="onButtonClick"
-        app:flow_horizontalBias="0.5"
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="587dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/news3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:scrollbars="vertical"
+        android:scrollbarSize="12dp">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/news5"
+                android:layout_width="370dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:onClick="onButtonClick"
+                app:srcCompat="@drawable/news1" />
+
+            <ImageButton
+                android:id="@+id/news4"
+                android:layout_width="370dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:onClick="onButtonClick"
+                app:srcCompat="@drawable/news4" />
+
+            <ImageButton
+                android:id="@+id/news3"
+                android:layout_width="370dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:onClick="onButtonClick"
+                app:srcCompat="@drawable/news3" />
+
+            <ImageButton
+                android:id="@+id/news2"
+                android:layout_width="370dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:onClick="onButtonClick"
+                app:flow_horizontalBias="0.5"
+                app:srcCompat="@drawable/news2" />
+
+            <ImageButton
+                android:id="@+id/news1"
+                android:layout_width="370dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:onClick="onButtonClick"
+                app:srcCompat="@drawable/news1" />
+        </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="410dp"
@@ -96,35 +151,9 @@
         android:clickable="true"
         android:onClick="Profile"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_popup_sync" />
 
-    <ImageButton
-        android:id="@+id/news1"
-        android:layout_width="370dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="120dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="onButtonClick"
-        app:srcCompat="@drawable/news1" />
-
-    <ImageButton
-        android:id="@+id/news2"
-        android:layout_width="370dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="310dp"
-        android:background="@color/white"
-        android:onClick="onButtonClick"
-        app:flow_horizontalBias="0.5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/news2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

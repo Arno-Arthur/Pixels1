@@ -5,12 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/reset2"
+        android:layout_width="80dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/roun_corn"
+        android:clickable="true"
+        android:onClick="Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_popup_sync" />
+
     <HorizontalScrollView
         android:id="@+id/HSV3"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:layout_marginTop="433dp"
-        android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,27 +65,16 @@
                 android:layout_marginEnd="5dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/el1" />
+
         </LinearLayout>
     </HorizontalScrollView>
-
-    <TextView
-        android:id="@+id/recent2"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="150dp"
-        android:text="All"
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Recent" />
 
     <HorizontalScrollView
         android:id="@+id/HSV2"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:layout_marginTop="242dp"
-        android:scrollbars="none"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -125,7 +127,7 @@
         android:text="Recent"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -138,7 +140,7 @@
         android:text="@string/Coll"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -205,7 +207,7 @@
         android:text="New"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recent" />
 
@@ -214,7 +216,6 @@
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:layout_marginTop="52dp"
-        android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -226,38 +227,57 @@
             android:id="@+id/ll1">
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/i1"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="5dp"
                 android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onButtonClick"
                 app:srcCompat="@drawable/anim_zeb" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/i2"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="20dp"
                 android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onButtonClick"
                 app:srcCompat="@drawable/anim_tig" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/i3"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="20dp"
                 android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onButtonClick"
                 app:srcCompat="@drawable/anim_lion" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/i4"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="5dp"
                 android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onButtonClick"
                 app:srcCompat="@drawable/anim_el" />
         </LinearLayout>
     </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/recent2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="All"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HSV2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

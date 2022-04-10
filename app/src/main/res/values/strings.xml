@@ -29,4 +29,10 @@
         <item>https://mail.ru</item>
         <item>https://yandex.ru/images</item>
     </string-array>
+    <string-array name="gifs">
+        <item>https://google.com</item>
+        <item>https://yandex.ru</item>
+        <item>https://www.microsoft.com</item>
+        <item>https://wikipedia.org</item>
+    </string-array>
 </resources>

@@ -19,19 +19,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.12" />
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="240dp"
         android:layout_height="53dp"
         android:layout_marginTop="44dp"
+        android:background="@drawable/tags"
         android:text="@string/ProfSett"
         android:textSize="35sp"
-        android:background="@drawable/tags"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <LinearLayout
         android:layout_width="413dp"

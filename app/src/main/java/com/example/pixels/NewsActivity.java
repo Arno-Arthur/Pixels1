@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import java.util.Random;
 
 public class NewsActivity extends SecondActivity {
-    ImageView im1,im2,im3, res;
+    ImageView im1,im2,im3,im4,im5, res;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,8 @@ public class NewsActivity extends SecondActivity {
         im2 = findViewById(R.id.news2);
         im1 = findViewById(R.id.news1);
         im3 = findViewById(R.id.news3);
+        im4 = findViewById(R.id.news4);
+        im5 = findViewById(R.id.news5);
         res = findViewById(R.id.reset);
         updateNews();
 
@@ -54,6 +56,12 @@ public class NewsActivity extends SecondActivity {
         id = new Random().nextInt(links.length);
         im3.setImageResource(images[id]);
         im3.setTag(links[id]);
+        id = new Random().nextInt(links.length);
+        im4.setImageResource(images[id]);
+        im4.setTag(links[id]);
+        id = new Random().nextInt(links.length);
+        im5.setImageResource(images[id]);
+        im5.setTag(links[id]);
     }
 
     public void onButtonClick(View view){

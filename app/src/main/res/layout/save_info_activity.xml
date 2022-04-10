@@ -23,11 +23,11 @@
         android:layout_width="240dp"
         android:layout_height="53dp"
         android:layout_marginTop="44dp"
-        android:text="@string/ProfSett"
         android:background="@drawable/tags"
+        android:text="@string/ProfSett"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
