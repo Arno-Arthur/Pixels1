@@ -7,36 +7,41 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="184dp"
-        android:text = "@string/Welcome"
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="200dp"
         android:background="@drawable/tags"
+        android:gravity="center"
+        android:text="Добро пожаловать в   Animal app"
         android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/Logo"
-        android:layout_width="336dp"
+        android:layout_width="300dp"
         android:layout_height="140dp"
-        android:layout_marginTop="348dp"
         android:src="@drawable/logo"
+        android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toBottomOf="@+id/textView2"></ImageView>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="728dp"
-        android:text="@string/Next"
-        android:onClick= "onClick"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:onClick="onClick"
+        android:text="Далее"
+        android:textSize="15dp"
+        android:layout_marginTop="170dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

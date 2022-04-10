@@ -23,10 +23,10 @@ public class SettingActivitySaved extends SecondActivity {
         Pref = getSharedPreferences("SharPref", MODE_PRIVATE);
 
         String N = Pref.getString("NAME", " ");
-        Name.setText("Username: " + N);
+        Name.setText("Имя: " + N);
 
         int Number = Pref.getInt("CLASS", 0);
-        Class.setText("Class: " + Number);
+        Class.setText("Класс: " + Number);
 
         Change.setOnClickListener(new View.OnClickListener() {
             @Override

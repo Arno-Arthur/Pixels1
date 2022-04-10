@@ -20,11 +20,11 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="240dp"
+        android:layout_width="190dp"
         android:layout_height="53dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/tags"
-        android:text="@string/ProfSett"
+        android:text="Настройки"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.076"
@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="46dp"
             android:layout_marginHorizontal="8dp"
-            android:text="Personal "
+            android:text="Личные данные "
             android:textSize="30dp"></TextView>
 
         <TextView
@@ -56,7 +56,7 @@
             android:layout_width="300dp"
             android:layout_height="45dp"
             android:layout_marginHorizontal="20dp"
-            android:hint="@string/Name"
+            android:hint="Имя"
             android:textSize="25dp" />
 
         <TextView
@@ -64,7 +64,7 @@
             android:layout_width="300dp"
             android:layout_height="45dp"
             android:layout_marginHorizontal="20dp"
-            android:hint="@string/Class"
+            android:hint="Класс"
             android:textSize="25dp" />
 
 
@@ -73,7 +73,7 @@
             android:layout_width="160dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="200dp"
-            android:text="Change" />
+            android:text="Изменить" />
 
 
     </LinearLayout>
@@ -138,7 +138,7 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="205dp"
-        android:text="@string/ChangeA"
+        android:text="Смена фото"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"

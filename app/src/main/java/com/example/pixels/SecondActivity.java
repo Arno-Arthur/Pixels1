@@ -19,10 +19,10 @@ public class SecondActivity extends MainActivity{
         Pref = getSharedPreferences("SharPref",MODE_PRIVATE);
 
         String UN = Pref.getString("NAME", "");
-        Uname.setText("Name: " + UN);
+        Uname.setText("Имя: " + UN);
 
         int UC = Pref.getInt("CLASS", 0);
-        Uclass.setText("Class: " + UC);
+        Uclass.setText("Класс: " + UC);
 
     }
     public void Settings (View view) {

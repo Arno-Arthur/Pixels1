@@ -62,10 +62,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="105dp"
+        android:layout_width="155dp"
         android:layout_height="53dp"
         android:layout_marginTop="44dp"
-        android:text="@string/Prof"
+        android:text="Профиль"
         android:background="@drawable/tags"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,10 +75,10 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="113dp"
+        android:layout_width="130dp"
         android:layout_height="53dp"
         android:layout_marginTop="44dp"
-        android:text="@string/Sett"
+        android:text="Настройки"
         android:onClick="Settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
