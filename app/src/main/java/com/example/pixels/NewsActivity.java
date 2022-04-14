@@ -6,6 +6,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 import java.util.Random;
 
 public class NewsActivity extends SecondActivity {
@@ -66,6 +68,7 @@ public class NewsActivity extends SecondActivity {
 
     public void onButtonClick(View view){
         Intent browseIntent = new Intent(Intent.ACTION_VIEW,Uri.parse((String) view.getTag()));
+        Toast.makeText(getApplicationContext(),"Загрузка", Toast.LENGTH_SHORT).show();
         startActivity(browseIntent);
     }
 }

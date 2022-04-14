@@ -17,7 +17,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ExpandableListView
+        android:id="@+id/exlv"
+        android:layout_width="413dp"
+        android:layout_height="630dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="410dp"
         android:layout_height="80dp"
         android:orientation="horizontal"
@@ -71,4 +81,5 @@
             android:onClick="Profile"
             android:src="@android:drawable/ic_dialog_alert"></ImageButton>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

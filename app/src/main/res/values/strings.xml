@@ -18,21 +18,36 @@
     <string name="Educ">Education</string>
     <string name="Coll">My collection</string>
     <string-array name="links">
-        <item>https://google.com</item>
-        <item>https://yandex.ru</item>
-        <item>https://www.microsoft.com</item>
+        <item>https://new-science.ru/eti-chervi-prinimajut-slozhnye-resheniya-ispolzuya-vsego-300-nejronov/</item>
+
+        <item>https://hightech.plus/2022/03/09/sozdan-ii-perevodchik-s-yazika-svinei</item>
+
+        <item>https://ria.ru/20220318/omolozhenie-1778326312.html</item>
+
+        <item>https://mos.news/news/society/populyatsiya_avstraliyskikh_koal_prodolzhaet_sokrashchatsya/
+            ?utm_source=yxnews&amp;utm_medium=desktop</item>
+
+        <item>https://rossaprimavera.ru/news/53367fc2?utm_source=yxnews&amp;utm_medium=desktop&amp;
+            utm_referrer=https%3A%2F%2Fyandex.ru%2Fnews%2Fsearch%3Ftext%3D</item>
+
+        <item>http://zaoblakami.ru/news/107391?utm_source=yxnews&amp;utm_medium=desktop&amp;utm_
+            referrer=https%3A%2F%2Fyandex.ru%2Fnews%2Fstory%2FDelfin_zhivushhij_sredimorskikh_svinej
+            _zagovoril_naikh_yazyke—173d883cf660472798eb22b95024af03</item>
+
+        <item>https://www.autoparus.by/publication/61227</item>
+
         <item>https://wikipedia.org</item>
-        <item>https://www.citilink.ru/discount/?ref=mainmenu</item>
-        <item>https://ozon.ru</item>
-        <item>https://www.lego.com</item>
-        <item>https://ok.ru</item>
-        <item>https://mail.ru</item>
-        <item>https://yandex.ru/images</item>
+
+        <item>https://rossaprimavera.ru/news/e7e82de8</item>
+
+        <item>https://www.ridus.ru/news/377914</item>
+
     </string-array>
+
     <string-array name="gifs">
         <item>https://google.com</item>
-        <item>https://yandex.ru</item>
-        <item>https://www.microsoft.com</item>
-        <item>https://wikipedia.org</item>
+        <item>https://google.com</item>
+        <item>https://google.com</item>
+        <item>https://google.com</item>
     </string-array>
 </resources>

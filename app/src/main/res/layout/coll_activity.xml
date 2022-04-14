@@ -7,14 +7,14 @@
 
     <ImageView
         android:id="@+id/reset2"
-        android:layout_width="80dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="108dp"
         android:background="@drawable/roun_corn"
         android:clickable="true"
         android:onClick="Profile"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_popup_sync" />
@@ -42,12 +42,33 @@
                 app:srcCompat="@drawable/zeb1" />
 
             <ImageView
+                android:id="@+id/i8"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onButtonClick"
+                app:srcCompat="@drawable/anim_lion" />
+
+            <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="20dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/tiger1" />
+
+            <ImageView
+                android:id="@+id/i6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onButtonClick"
+                app:srcCompat="@drawable/anim_el" />
 
             <ImageView
                 android:id="@+id/imageView11"
@@ -58,6 +79,16 @@
                 app:srcCompat="@drawable/lion1" />
 
             <ImageView
+                android:id="@+id/i7"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onButtonClick"
+                app:srcCompat="@drawable/anim_tig" />
+
+            <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -65,6 +96,16 @@
                 android:layout_marginEnd="5dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/el1" />
+
+            <ImageView
+                android:id="@+id/i5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onButtonClick"
+                app:srcCompat="@drawable/anim_zeb" />
 
         </LinearLayout>
     </HorizontalScrollView>
@@ -121,10 +162,10 @@
 
     <TextView
         android:id="@+id/recent"
-        android:layout_width="120dp"
+        android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginTop="12dp"
-        android:text="Недавние"
+        android:text="Новые"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -150,7 +191,7 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
@@ -164,7 +205,7 @@
             android:background="@color/purple_500"
             android:clickable="true"
             android:onClick="News"
-            android:src="@android:drawable/ic_dialog_info"></ImageButton>
+            android:src="@android:drawable/ic_dialog_info" />
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -175,7 +216,7 @@
             android:background="@color/purple_500"
             android:clickable="true"
             android:onClick="Education"
-            android:src="@android:drawable/ic_dialog_map"></ImageButton>
+            android:src="@android:drawable/ic_dialog_map" />
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -186,7 +227,7 @@
             android:background="@color/purple_200"
             android:clickable="true"
             android:onClick="Collection"
-            android:src="@android:drawable/ic_dialog_dialer"></ImageButton>
+            android:src="@android:drawable/ic_dialog_dialer" />
 
         <ImageButton
             android:layout_width="50dp"
@@ -196,15 +237,15 @@
             android:background="@color/purple_500"
             android:clickable="true"
             android:onClick="Profile"
-            android:src="@android:drawable/ic_dialog_alert"></ImageButton>
+            android:src="@android:drawable/ic_dialog_alert" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/Recent"
-        android:layout_width="100dp"
+        android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_marginTop="150dp"
-        android:text="Новые"
+        android:text="Недавние"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
