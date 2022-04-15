@@ -22,12 +22,6 @@ public class SettingActivitySaved extends SecondActivity {
         Change = findViewById(R.id.Change);
         Pref = getSharedPreferences("SharPref", MODE_PRIVATE);
 
-        String N = Pref.getString("NAME", " ");
-        Name.setText("Имя: " + N);
-
-        int Number = Pref.getInt("CLASS", 0);
-        Class.setText("Класс: " + Number);
-
         Change.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,6 +34,12 @@ public class SettingActivitySaved extends SecondActivity {
                 finish();
             }
         });
+
+        String N = Pref.getString("NAME", " ");
+        Name.setText("Имя: " + N);
+
+        int Number = Pref.getInt("CLASS", 0);
+        Class.setText("Класс: " + Number);
 
 
     }

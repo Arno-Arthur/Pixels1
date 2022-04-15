@@ -21,7 +21,6 @@ public class SecondActivity extends MainActivity{
         Uclass = findViewById(R.id.userclass);
         Pref = getSharedPreferences("SharPref",MODE_PRIVATE);
 
-
         String UN = Pref.getString("NAME", "");
         Uname.setText("Имя: " + UN);
 

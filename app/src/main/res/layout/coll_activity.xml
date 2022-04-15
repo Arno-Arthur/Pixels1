@@ -237,6 +237,7 @@
             android:background="@color/purple_500"
             android:clickable="true"
             android:onClick="Profile"
+            android:id="@+id/imageButton1"
             android:src="@android:drawable/ic_dialog_alert" />
     </LinearLayout>
 

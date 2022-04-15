@@ -49,7 +49,6 @@ public class SettingActivity extends SecondActivity {
                 }
                 if(!Name.isEmpty() && Class>0){
                     boolean checked = isRem.isChecked();
-
                     SharedPreferences.Editor editor = shPr.edit();
                     editor.putString("NAME", Name);
                     editor.putInt("CLASS",Class);
@@ -61,6 +60,7 @@ public class SettingActivity extends SecondActivity {
                     Intent intent = new Intent (SettingActivity.this, SettingActivitySaved.class);
                     startActivity(intent);
                     finish();
+
                 }
             }
         });
