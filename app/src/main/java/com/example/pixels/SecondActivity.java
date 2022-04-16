@@ -1,18 +1,18 @@
 package com.example.pixels;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.Date;
 
 public class SecondActivity extends MainActivity{
     TextView Uname,Uclass;
     SharedPreferences Pref;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,7 @@ public class SecondActivity extends MainActivity{
         Uname = findViewById(R.id.username);
         Uclass = findViewById(R.id.userclass);
         Pref = getSharedPreferences("SharPref",MODE_PRIVATE);
+
 
         String UN = Pref.getString("NAME", "");
         Uname.setText("Имя: " + UN);
@@ -29,7 +30,7 @@ public class SecondActivity extends MainActivity{
 
     }
     public void Settings (View view) {
-        Intent intent = new Intent(this, SettingActivity.class);
+        Intent intent = new Intent(this, SettingActivitySaved.class);
         startActivity(intent);
     }
     public void Profile (View view) {
@@ -47,5 +48,6 @@ public class SecondActivity extends MainActivity{
     public void News (View view) {
         Intent intent = new Intent(this, NewsActivity.class);
         startActivity(intent);
+
     }
 }

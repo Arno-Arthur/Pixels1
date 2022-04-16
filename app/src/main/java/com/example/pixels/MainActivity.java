@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onClick(View view) {
-        Intent intent = new Intent(this, SettingActivity.class);
+        Intent intent = new Intent(this, NewsActivity.class);
         startActivity(intent);
     }
 }
