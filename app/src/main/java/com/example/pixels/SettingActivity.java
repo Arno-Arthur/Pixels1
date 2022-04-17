@@ -3,6 +3,7 @@ package com.example.pixels;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -10,12 +11,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class SettingActivity extends SecondActivity {
-
     EditText entName,entClass;
     Button saveBtn;
     SharedPreferences shPr;
     CheckBox isRem;
-    boolean isRemembered = false;
+    boolean isRemembered;
 
 
     @Override
@@ -31,6 +31,7 @@ public class SettingActivity extends SecondActivity {
 
         isRemembered = shPr.getBoolean("CHECKBOX", false);
         if (isRemembered) {
+            Log.e("SettingActivity","remember");
             Intent intent = new Intent (SettingActivity.this, SettingActivitySaved.class);
             startActivity(intent);
             finish();
@@ -49,6 +50,7 @@ public class SettingActivity extends SecondActivity {
                 }
                 if(!Name.isEmpty() && Class>0){
                     boolean checked = isRem.isChecked();
+                    System.out.println(checked);
                     SharedPreferences.Editor editor = shPr.edit();
                     editor.putString("NAME", Name);
                     editor.putInt("CLASS",Class);
@@ -60,6 +62,7 @@ public class SettingActivity extends SecondActivity {
                     Intent intent = new Intent (SettingActivity.this, SettingActivitySaved.class);
                     startActivity(intent);
                     finish();
+
 
                 }
             }

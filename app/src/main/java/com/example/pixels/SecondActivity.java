@@ -1,20 +1,24 @@
 package com.example.pixels;
 
 import android.annotation.SuppressLint;
+import android.app.Application;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
 
-public class SecondActivity extends MainActivity{
+
+public class SecondActivity extends AppCompatActivity {
     TextView Uname,Uclass;
     SharedPreferences Pref;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_activity);
         Uname = findViewById(R.id.username);
