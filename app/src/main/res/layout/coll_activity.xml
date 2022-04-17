@@ -229,11 +229,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="260dp"
+        android:layout_width="315dp"
         android:layout_height="53dp"
         android:layout_marginTop="44dp"
-        android:background="@drawable/tags"
-        android:text="Моя коллекция"
+        android:text="Моя AR-Коллекция"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.064"

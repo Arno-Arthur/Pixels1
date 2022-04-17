@@ -55,7 +55,7 @@ public class SettingActivity extends SecondActivity {
                     editor.putBoolean("CHECKBOX", checked);
                     editor.apply();
 
-                    Toast.makeText(SettingActivity.this, "Info Saved", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SettingActivity.this, "Сохранено", Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent (SettingActivity.this, SettingActivitySaved.class);
                     startActivity(intent);

@@ -66,7 +66,6 @@
         android:layout_height="53dp"
         android:layout_marginTop="44dp"
         android:text="Профиль"
-        android:background="@drawable/tags"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.04"

@@ -136,7 +136,6 @@
         android:layout_marginTop="44dp"
         android:text="Новости"
         android:textSize="35sp"
-        android:background="@drawable/tags"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
