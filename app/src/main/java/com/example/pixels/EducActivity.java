@@ -89,18 +89,34 @@ public class EducActivity extends SecondActivity{
             a.setData(Uri.parse(url));
             startActivity(a);
         }
+        else if (selected == "Млекопитающие"){
+            String url = "https://foxford.ru/trainings/987";
+            Intent a = new Intent(Intent.ACTION_VIEW);
+            a.setData(Uri.parse(url));
+            startActivity(a);
+        }
+        else if (selected == "Покровы тела"){
+            String url = "https://foxford.ru/trainings/988";
+            Intent a = new Intent(Intent.ACTION_VIEW);
+            a.setData(Uri.parse(url));
+            startActivity(a);
+        }
     }
 
     private void createColl() {
         String[] SModels = {"Урок 1.1 - Подцарство Простейшие", "Урок 1.2 - Класс Млекопитающие",
                 "Урок 1.3 - Класс Насекомые"};
         String[] MModels = {"Урок 2.1 - Водоросли", "Урок 2.2 - Отдел Плауновидные"};
+        String[] Test = {"Млекопитающие" , "Покровы тела"};
         collect = new HashMap <String, List<String>>();
         for (String group : list) {
             if (group.equals("Глава 1. Царство Животные")) {
                 load(SModels);
             } else if (group.equals("Глава 2. Царство Растения")) {
                 load(MModels);
+            }
+            else if (group.equals("Тесты")){
+                load(Test);
             }
             collect.put(group,clist);
         }
@@ -109,6 +125,7 @@ public class EducActivity extends SecondActivity{
         list = new ArrayList<>();
         list.add("Глава 1. Царство Животные");
         list.add("Глава 2. Царство Растения");
+        list.add("Тесты");
     }
 
     private void load(String[] mobileModel) {

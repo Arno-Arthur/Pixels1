@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class SettingActivitySaved extends SecondActivity {
   TextView Name,Class;
   SharedPreferences Pref;
-  Button Change;
+  Button Change,Photo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class SettingActivitySaved extends SecondActivity {
         Name = findViewById(R.id.getName);
         Class = findViewById(R.id.getClass);
         Change = findViewById(R.id.Change);
+        Photo = findViewById(R.id.button4);
         Pref = getSharedPreferences("SharPref", MODE_PRIVATE);
 
         Change.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +41,6 @@ public class SettingActivitySaved extends SecondActivity {
 
         int Number = Pref.getInt("CLASS", 0);
         Class.setText("Класс: " + Number);
-
 
     }
 }

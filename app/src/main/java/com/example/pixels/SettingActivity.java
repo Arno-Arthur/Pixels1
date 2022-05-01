@@ -67,7 +67,5 @@ public class SettingActivity extends SecondActivity {
                 }
             }
         });
-
     }
-
 }
